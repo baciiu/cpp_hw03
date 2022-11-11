@@ -26,6 +26,12 @@ void printArray(T array[], int n){
     cout<< "\n\n";
 }
 
+template<typename T>
+void swap(T array[], T first, T second){
+    T temp = array[second];
+    array[second] = array[first];
+    array[first] = temp;
+}
 
 
 
