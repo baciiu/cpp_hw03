@@ -1,47 +1,28 @@
 #include "ex03_1.h"
 
-#include <iostream>
+#include "bubble_sort.h"
 
 using namespace std;
 
-template <typename T>
-void bubbleSort(T array[], int n){
-
-    for( int i = 0 ; i < n-1; ++i ){
-        for( int j = 0 ; j < n-i-1 ; ++j ){
-
-            if( array[j] > array[j+1] ){
-                T temp = array[j+1];
-                array[j+1] = array[j];
-                array[j] = temp;
-            }
-        }
-    }
-}
-template<typename T>
-void printArray(T array[], int n){
-    for (int i = 0; i < n; ++i) {
-        cout << array[i] << " ";
-    }
-    cout<< "\n\n";
-}
-
-template<typename T>
-void swap(T array[], T first, T second){
-    T temp = array[second];
-    array[second] = array[first];
-    array[first] = temp;
-}
-
-
-
-void Exercise31::run(){
+void Exercise31::run() {
  cout << "Exercise 1" << endl;
+
+ cout << "int array:" << endl;
+
  int array[] = { 1, 10, 90, 100, -1, 11, 9, 14, 3, 2, 20, 19 };
  int n = sizeof(array) / sizeof(int);
 
-    printArray(array,n);
-    bubbleSort(array,n);
-    printArray(array,n);
+ Arrays<int>::print(array, n);
+ Sort::Bubble<int>::sort(array, n);
+ Arrays<int>::print(array, n);
+
+ cout << "int array:" << endl;
+
+ double double_array[] = {0.1, 3.14, 9.8, -273.1};
+ int dn = sizeof(double_array) / sizeof(double);
+
+ Arrays<double>::print(double_array, dn);
+ Sort::Bubble<double>::sort(double_array, dn);
+ Arrays<double>::print(double_array, dn);
 
 }
