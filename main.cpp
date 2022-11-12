@@ -6,13 +6,13 @@
 
 int main() {
 
-    Exercise31::run();
+//    Exercise31::run();
 
     Exercise32::run();
 
-    Exercise33::run();
+//    Exercise33::run();
 
-    Exercise34::run();
+//    Exercise34::run();
 
     return 0;
 }
