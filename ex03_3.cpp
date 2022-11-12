@@ -159,4 +159,19 @@ void Exercise33::run(){
     cout << "---------------------------------------------------------" << endl;
 
 
+    Stack<double> double_stack;
+    double_stack.push(3.14);
+    double_stack.push(9.8);
+    cout << "Double stack sum: " << double_stack.getSum() << endl;
+    cout << "Double stack max: " << double_stack.getMaxElement() << endl;
+
+    Stack<char> char_stack;
+    char_stack.push('h');
+    char_stack.push('e');
+    char_stack.push('l');
+    char_stack.push('o');
+
+    cout << "Char stack sum: " << char_stack.getSum() << endl;
+    cout << "Char stack max: " << char_stack.getMaxElement() << endl;
+
 }
