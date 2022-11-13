@@ -19,8 +19,8 @@ public:
     void display();
 };
 
-template <class K, class V>
-void Pair<K, V>::enter() {
+template <class T, class V>
+void Pair<T, V>::enter() {
     cout << "key (" << typeid(key).name() << "): ";
     cin >> key;
     cout << "value (" << typeid(value).name() << "): ";
