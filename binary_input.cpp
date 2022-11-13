@@ -28,7 +28,7 @@ namespace Exercise3_4 {
       int digits = 0;
 
       while (input_copy != 0) {
-        if (digits > 16) {
+        if (digits >= MAX_BITS) {
           cerr << "Number is too long!" << endl;
           isOk = false;
           break;
